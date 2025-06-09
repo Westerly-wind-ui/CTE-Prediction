@@ -3,7 +3,7 @@ load('R_09_Jan_2025_16_20_20.mat')
 random_seed=G_out_data.random_seed ;  %界面设置的种子数 	
 rng(random_seed)  %固定随机数种子 	
 	
-data_str="F:\处理中\6-二元热膨胀系数机器学习研究\2024.12-25-AFM投稿\数据\数据\Dataset-binary（数据清洗后）.xlsx";  %读取数据的路径 	
+data_str="F:\处理中\数据\数据\Dataset-binary（数据清洗后）.xlsx";  %读取数据的路径 	
 dataO=readtable(data_str,'VariableNamingRule','preserve'); %读取数据 	
 data1=dataO(:,2:end);test_data=table2cell(dataO(1,2:end));	
 for i=1:length(test_data)	
