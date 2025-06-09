@@ -472,7 +472,7 @@ PlotProbability1(y_test_predict,test_y_feature_label,Lower1,Upper1,plot_index(1)
 	
 	
  %% 真实预测块 需要有待预测的数据特征，比训练数据最后一列y	
- predict_str="F:\6-二元热膨胀系数机器学习研究\2024.12-25-AFM投稿\数据\数据\验证\需进行实验验证的二元体系.xlsx"   	
+ predict_str="F:\6-二元热膨胀系数机器学习研究\数据\数据\验证\需进行实验验证的二元体系.xlsx"   	
 	
   dataO1=readtable(predict_str,'VariableNamingRule','preserve');  	
   data1=dataO1(:,2:end);  test_data=table2cell(dataO1(1,2:end));  index_la=[];	
